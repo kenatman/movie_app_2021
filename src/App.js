@@ -4,8 +4,12 @@ import PropTypes from "prop-types";
 class App extends React.Component {
   state = { count: 0 };
 
-  add = () => console.log(`add`);
-  minus = () => console.log(`minus`);
+  add = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+  minus = () => {
+    this.setState({ count: this.state.count - 1 });
+  };
 
   render() {
     return (
