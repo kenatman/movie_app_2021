@@ -14,7 +14,8 @@
 }
 
 .movies {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
