@@ -1,7 +1,13 @@
 import React from "react";
+import "./About.css";
 
 function About() {
-  return <span> This is About page!!!</span>;
+  return (
+    <div className="about__container">
+      <span>Overthinking is the biggest cause of unhappiness.</span>
+      <span>-GAUTAMA BUDDHA</span>
+    </div>
+  );
 }
 
 export default About;
